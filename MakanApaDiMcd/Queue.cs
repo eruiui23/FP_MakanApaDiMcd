@@ -1,3 +1,5 @@
+namespace Queue;
+
 public class LinkedListQueue<T>
 {
     private class Node

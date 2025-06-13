@@ -12,3 +12,4 @@ C:\Users\kagen\hackerman\Sem_2\strukdat\FP_MakanApaDiMcd\MakanApaDiMcd\obj\Debug
 C:\Users\kagen\hackerman\Sem_2\strukdat\FP_MakanApaDiMcd\MakanApaDiMcd\obj\Debug\net9.0\MakanApaDiMcd.pdb
 C:\Users\kagen\hackerman\Sem_2\strukdat\FP_MakanApaDiMcd\MakanApaDiMcd\obj\Debug\net9.0\MakanApaDiMcd.genruntimeconfig.cache
 C:\Users\kagen\hackerman\Sem_2\strukdat\FP_MakanApaDiMcd\MakanApaDiMcd\obj\Debug\net9.0\ref\MakanApaDiMcd.dll
+C:\Users\kagen\hackerman\Sem_2\strukdat\FP_MakanApaDiMcd\MakanApaDiMcd\obj\Debug\net9.0\MakanApaDiMcd.sourcelink.json

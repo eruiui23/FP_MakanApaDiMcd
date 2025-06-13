@@ -1,4 +1,5 @@
 ﻿using System;
+using Queue;
 
 namespace MakanApaDiMcd;
 
@@ -9,7 +10,7 @@ class Program
         bool isRunning = true;
         while (isRunning)
         {
-
+            Queue<string> Antrian = new Queue<string>();
 
             int mode;
             Console.WriteLine("\nSelamat Datang di McD ^-^\n");

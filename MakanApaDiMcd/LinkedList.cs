@@ -75,14 +75,14 @@ public class LinkedList
     }
 }
 
-class Program
-{
-    static void Main(string[] args)
-    {
-        LinkedList linkedList = new LinkedList();
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         LinkedList linkedList = new LinkedList();
 
-        linkedList.AddLast(3); // Menambahkan 3 di akhir list
-        linkedList.AddFirst(1); // Menambahkan 1 di awal list
-        linkedList.AddAfter(1, 2); // Menambahkan 2 setelah 1, di tengah list
-    }
-}
+//         linkedList.AddLast(3); // Menambahkan 3 di akhir list
+//         linkedList.AddFirst(1); // Menambahkan 1 di awal list
+//         linkedList.AddAfter(1, 2); // Menambahkan 2 setelah 1, di tengah list
+//     }
+// }
