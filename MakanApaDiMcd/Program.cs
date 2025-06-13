@@ -6,12 +6,12 @@ class Program
 {
     static void Main()
     {
+        Queue Antrian = new Queue();
+
         bool isRunning = true;
         while (isRunning)
         {
-
-            Queue<string> Antrian = new Queue<string>();
-
+            Console.Clear();
             int mode;
             Console.WriteLine("\nSelamat Datang di McD ^-^\n");
             Console.WriteLine("Masuk sebagai : ");
@@ -40,14 +40,15 @@ class Program
 
                     Console.Clear();
                     Console.WriteLine("Masukan nama :");
-                    Antrian.Enqueue(Console.ReadLine());
-
+                    Antrian.Enqueue(new Pesanan(Console.ReadLine()));
 
 
                 }
                 else if (input == "2")
                 {
-
+                    Console.Clear();
+                    Console.WriteLine(Antrian.Peek());
+                    Console.ReadLine();
                 }
                 else
                 {
@@ -60,6 +61,10 @@ class Program
                 Console.Clear();
                 // display queue dan total pesanan
                 Console.WriteLine("\n1. Selesaikan pesanan teratas\n2. Kembali");
+                if (Console.ReadLine() == "1")
+                {
+                    Antrian.Dequeue();
+                }
             }
 
         }

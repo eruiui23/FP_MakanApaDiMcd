@@ -1,11 +1,11 @@
-public class Queue<T>
+public class Queue
 {
     private class Node
     {
-        public T Data;
+        public Pesanan Data;
         public Node Next;
 
-        public Node(T data)
+        public Node(Pesanan data)
         {
             this.Data = data;
             this.Next = null;
@@ -21,7 +21,7 @@ public class Queue<T>
         tail = null;
     }
 
-    public void Enqueue(T item)
+    public void Enqueue(Pesanan item)
     {
         Node newNode = new Node(item);
         if (tail != null)
@@ -35,14 +35,14 @@ public class Queue<T>
         }
     }
 
-    public T Dequeue()
+    public  Pesanan Dequeue()
     {
         if (head == null)
         {
-            throw new InvalidOperationException("Queue is empty");
+            Console.WriteLine("Antrian kosong");
         }
 
-        T item = head.Data;
+        Pesanan item = head.Data;
         head = head.Next;
         if (head == null)
         {
@@ -51,17 +51,19 @@ public class Queue<T>
         return item;
     }
 
-    public T Peek()
+    public string Peek()
     {
         if (head == null)
         {
-            throw new InvalidOperationException("Queue is empty");
+            // Console.WriteLine("Queue is empty");
+            return "queue is empty";
         }
-        return head.Data;
+        return head.Data.Nama;
     }
 
     public bool IsEmpty()
     {
         return head == null;
     }
+    
 }
