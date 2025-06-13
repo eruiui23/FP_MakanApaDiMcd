@@ -1,6 +1,4 @@
-namespace Queue;
-
-public class LinkedListQueue<T>
+public class Queue<T>
 {
     private class Node
     {
@@ -17,7 +15,7 @@ public class LinkedListQueue<T>
     private Node head;
     private Node tail;
 
-    public LinkedListQueue()
+    public Queue()
     {
         head = null;
         tail = null;

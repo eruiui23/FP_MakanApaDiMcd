@@ -1,5 +1,4 @@
 ﻿using System;
-using Queue;
 
 namespace MakanApaDiMcd;
 
@@ -10,6 +9,7 @@ class Program
         bool isRunning = true;
         while (isRunning)
         {
+
             Queue<string> Antrian = new Queue<string>();
 
             int mode;
@@ -18,7 +18,7 @@ class Program
             Console.WriteLine("1. Pelanggan\n2. Karyawan\n");
             Console.WriteLine("Masukan angka sesuai pengguna, ketik \"exit\" untuk mengakhiri program");
 
-            string ?input = Console.ReadLine();
+            string? input = Console.ReadLine();
 
             if (0 == string.Compare(input, "exit"))
             {
@@ -36,13 +36,14 @@ class Program
                 input = Console.ReadLine();
                 if (input == "1")
                 {
-                    
+
 
                     Console.Clear();
                     Console.WriteLine("Masukan nama :");
-                    
+                    Antrian.Enqueue(Console.ReadLine());
 
-                    
+
+
                 }
                 else if (input == "2")
                 {
