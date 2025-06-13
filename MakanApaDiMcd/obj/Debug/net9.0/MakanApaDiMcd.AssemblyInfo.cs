@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MakanApaDiMcd")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+667b5e4db87a7cea2641f2264b01ae8a4a62a3a9")]
 [assembly: System.Reflection.AssemblyProductAttribute("MakanApaDiMcd")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MakanApaDiMcd")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
