@@ -1,0 +1,14 @@
+C:\Users\kagen\hackerman\Sem_2\strukdat\FP_MakanApaDiMcd\MakanApaDiMcd\bin\Debug\net9.0\MakanApaDiMcd.exe
+C:\Users\kagen\hackerman\Sem_2\strukdat\FP_MakanApaDiMcd\MakanApaDiMcd\bin\Debug\net9.0\MakanApaDiMcd.deps.json
+C:\Users\kagen\hackerman\Sem_2\strukdat\FP_MakanApaDiMcd\MakanApaDiMcd\bin\Debug\net9.0\MakanApaDiMcd.runtimeconfig.json
+C:\Users\kagen\hackerman\Sem_2\strukdat\FP_MakanApaDiMcd\MakanApaDiMcd\bin\Debug\net9.0\MakanApaDiMcd.dll
+C:\Users\kagen\hackerman\Sem_2\strukdat\FP_MakanApaDiMcd\MakanApaDiMcd\bin\Debug\net9.0\MakanApaDiMcd.pdb
+C:\Users\kagen\hackerman\Sem_2\strukdat\FP_MakanApaDiMcd\MakanApaDiMcd\obj\Debug\net9.0\MakanApaDiMcd.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kagen\hackerman\Sem_2\strukdat\FP_MakanApaDiMcd\MakanApaDiMcd\obj\Debug\net9.0\MakanApaDiMcd.AssemblyInfoInputs.cache
+C:\Users\kagen\hackerman\Sem_2\strukdat\FP_MakanApaDiMcd\MakanApaDiMcd\obj\Debug\net9.0\MakanApaDiMcd.AssemblyInfo.cs
+C:\Users\kagen\hackerman\Sem_2\strukdat\FP_MakanApaDiMcd\MakanApaDiMcd\obj\Debug\net9.0\MakanApaDiMcd.csproj.CoreCompileInputs.cache
+C:\Users\kagen\hackerman\Sem_2\strukdat\FP_MakanApaDiMcd\MakanApaDiMcd\obj\Debug\net9.0\MakanApaDiMcd.dll
+C:\Users\kagen\hackerman\Sem_2\strukdat\FP_MakanApaDiMcd\MakanApaDiMcd\obj\Debug\net9.0\refint\MakanApaDiMcd.dll
+C:\Users\kagen\hackerman\Sem_2\strukdat\FP_MakanApaDiMcd\MakanApaDiMcd\obj\Debug\net9.0\MakanApaDiMcd.pdb
+C:\Users\kagen\hackerman\Sem_2\strukdat\FP_MakanApaDiMcd\MakanApaDiMcd\obj\Debug\net9.0\MakanApaDiMcd.genruntimeconfig.cache
+C:\Users\kagen\hackerman\Sem_2\strukdat\FP_MakanApaDiMcd\MakanApaDiMcd\obj\Debug\net9.0\ref\MakanApaDiMcd.dll
