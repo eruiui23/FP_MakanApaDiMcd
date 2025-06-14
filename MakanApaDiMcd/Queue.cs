@@ -1,3 +1,5 @@
+using System.Security.Cryptography;
+
 public class Queue
 {
     public int totalAntrian = 0;
@@ -92,7 +94,40 @@ public class Queue
         }
         while (current != null)
         {
-            Console.WriteLine($"- {current.Data.Nama}");
+            Console.WriteLine($"- [{current.Data.idPesanan}] {current.Data.Nama}");
+            current = current.Next;
+        }
+    }
+    public int CekAntrian(int idPesanan)
+    {
+        if (head == null)
+        {
+            return -1;
+        }
+        Node current = head;
+        int count = 0;
+        while (current != null)
+        {
+            if (current.Data.idPesanan == idPesanan)
+            {
+                return count;
+            }
+            count++;
+            current = current.Next;
+        }
+        return -1;
+    }
+
+    public void CekDetailAntrian(int idPesanan)
+    {
+        Node current = head;
+        while (current !=null)
+        {
+            if (current.Data.idPesanan == idPesanan)
+            {
+                current.Data.TampilkanPesanan();
+                return;
+            }
             current = current.Next;
         }
     }

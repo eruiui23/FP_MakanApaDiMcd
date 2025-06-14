@@ -26,14 +26,14 @@ class Program
 
                     Console.Clear();
                     Console.WriteLine("--Menu Pelanggan--\n");
-                    Console.WriteLine("1. Pesanan baru\n2. Pesanan terdaftar\n3. Kembali\n");
+                    Console.WriteLine("1. Pesanan baru\n2. Cek antrian\n3. Kembali\n");
 
                     input = Console.ReadLine();
                     if (input == "1")// Menu Pesanan Baru
                     {
                         bool isMemesan = true;
                         Console.Clear();
-                        Console.Write("*Masukan 0 untuk membatalkan Pesanan\n\nAtas nama : ");
+                        Console.Write("*Masukan \"0\" untuk membatalkan Pesanan\nAtas nama : ");
                         input = Console.ReadLine();
                         if (input != "0")
                         {
@@ -92,8 +92,13 @@ class Program
                                         Console.Clear();
                                         Console.Write("Pesanan akan diproses");
                                         AnimasiLoading();
-                                        Console.WriteLine("\n\nMohon ditunggu :D");
+                                        Console.Clear();
+                                        Console.WriteLine($"Pesanan nomor [{Antrian.PeekLast().idPesanan}] atas nama \"{Antrian.PeekLast().Nama}\" telah terdaftar");
                                         Thread.Sleep(1200);
+                                        Console.WriteLine("\nMohon ditunggu :D");
+                                        Console.WriteLine("\nTekan tombol apa saja untuk kembali");
+                                        Console.ReadLine();
+
 
                                         isMemesan = false;
                                         isMenuPelanggan = false;
@@ -109,7 +114,22 @@ class Program
                     else if (input == "2")
                     {
                         Console.Clear();
-                        Console.WriteLine(Antrian.Peek());
+                        Console.WriteLine("Masukan \"0\" untuk kembali");
+                        Console.Write("Masukan Nomor Pesanan : ");
+                        input = Console.ReadLine();
+                        if (Antrian.CekAntrian(int.Parse(input)) == -1)
+                        {
+                            Console.Clear();
+                            Console.WriteLine($"Tidak ditemukan pesanan dengan nomor [{input}]");
+                            Console.WriteLine("\nTekan tombol apa saja untuk kembali");
+                        }
+                        else
+                        {
+                            Console.Clear();
+                            Console.WriteLine($"Terdapat {Antrian.CekAntrian(int.Parse(input))} pesanan sebelum pesanan anda");
+                            Console.WriteLine("\nTekan tombol apa saja untuk kembali");
+                        }
+
                         Console.ReadLine();
                     }
                     else if (input == "3")
@@ -143,7 +163,7 @@ class Program
                         {
                             Pesanan item = Antrian.Dequeue();
                             Console.Clear();
-                            Console.WriteLine($"Menyelesaikan pesanan atas nama \"{item.Nama}\" : ");
+                            Console.WriteLine($"Menyelesaikan pesanan nomor [{item.idPesanan}] atas nama \"{item.Nama}\" : ");
 
                             Thread.Sleep(500);
 
@@ -165,12 +185,26 @@ class Program
                     }
                     else if (input == "2")
                     {
-                        Console.Clear();
-                        Console.WriteLine($"Total Pesanan : {Antrian.totalAntrian} ");
-                        Antrian.TampilkanAntrian();
+                        bool isDaftarPesanan = true;
+                        while (isDaftarPesanan)
+                        {
+                            Console.Clear();
+                            Console.WriteLine($"Total Pesanan : {Antrian.totalAntrian} ");
+                            Antrian.TampilkanAntrian();
 
-                        Console.WriteLine("\nTekan tombol apa saja untuk kembali");
-                        Console.ReadLine();
+                            Console.WriteLine("\nMasukan nomor pesanan untuk melihat detail. Masukan \"0\" untuk kembali");
+                            input = Console.ReadLine();
+                            if (input == "0")
+                            {
+                                isDaftarPesanan = false;
+                            }
+                            else
+                            {
+                                Console.Clear();
+                                Antrian.CekDetailAntrian(int.Parse(input));
+                                Console.ReadLine();
+                            }
+                        }
                     }
                     else if (input == "3")
                     {
@@ -179,7 +213,7 @@ class Program
 
                 }
             }
-            else //if (0 == string.Compare(input, "exit"))
+            else if (0 == string.Compare(input, "exit"))
             {
                 isRunning = false;
                 Console.Clear();
