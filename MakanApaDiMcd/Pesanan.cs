@@ -2,22 +2,22 @@ using System;
 public class Pesanan
 {
     public string Nama;
-    public LinkedListMenu Menu;
+    public ListMenu listMenu;
 
     public Pesanan(string nama)
     {
         Nama = nama;
-        Menu = new LinkedListMenu();
+        listMenu = new ListMenu();
     }
 
-    public void TambahMenu(string item)
+    public void TambahMenu(string item, int kuantitas)
     {
-        Menu.TambahMenu(item);
+        listMenu.TambahMenu(item, kuantitas);
     }
 
     public void TampilkanPesanan()
     {
-        Console.WriteLine($"Pesanan untuk {Nama}:");
-        Menu.TampilkanMenu();
+        // Console.WriteLine($"Pesanan untuk {Nama}:");
+        listMenu.TampilkanMenu();
     }
 }
