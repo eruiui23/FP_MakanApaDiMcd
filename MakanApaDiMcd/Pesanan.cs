@@ -5,7 +5,7 @@ public class Pesanan
     public string Nama;
     public int idPesanan;
     public ListMenu listMenu;
-    
+
 
     public Pesanan(string nama)
     {
@@ -24,4 +24,14 @@ public class Pesanan
         // Console.WriteLine($"Pesanan untuk {Nama}:");
         listMenu.TampilkanMenu();
     }
+    public void TampilkanPesananNomor()
+    {
+        // Console.WriteLine($"Pesanan untuk {Nama}:");
+        listMenu.TampilkanMenuNomor();
+    }
+    public void HapusMenuPadaIndex(int index)
+    {
+        listMenu.HapusMenuPadaIndex(index);
+    }
+
 }
