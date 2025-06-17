@@ -39,7 +39,7 @@ class Program
                         {
 
                         }
-                        else if (input != "0")
+                        else  
                         {
                             Antrian.Enqueue(new Pesanan(input));
 
